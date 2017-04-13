@@ -116,6 +116,8 @@
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
     <Content Include="Readme.txt" />
+    <Content Include="UWP-013-instructions.txt" />
+    <Content Include="UWP-013-Screenshot.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
