@@ -7,8 +7,53 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="500">
 
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Title 1" FontSize="24" Grid.Row="0" VerticalAlignment="Bottom"></TextBlock>
+        <TextBlock Text="Title 2" FontSize="24" Grid.Row="2" VerticalAlignment="Bottom"></TextBlock>
+        <TextBlock Text="Title 3" FontSize="24" Grid.Row="4" VerticalAlignment="Bottom"></TextBlock>
+
+        <!-- Outer (vertical) Stackpanel 1-->
+        <StackPanel Grid.Column="1" Grid.Row="1">
+
+            <!-- Inner (horizontal) Stackpanel 1-->
+            <StackPanel Orientation="Horizontal">
+
+            </StackPanel>
+
+        </StackPanel>
+
+        <!-- Outer (vertical) Stackpanel 2-->
+        <StackPanel Grid.Column="1" Grid.Row="3">
+
+            <!-- Inner (horizontal) Stackpanel 2-->
+            <StackPanel Orientation="Horizontal">
+
+            </StackPanel>
+        </StackPanel>
+
+        <!-- Outer (vertical) Stackpanel 3-->
+        <StackPanel Grid.Column="1" Grid.Row="5">
+
+            <!-- Inner (horizontal) Stackpanel 3-->
+            <StackPanel Orientation="Horizontal">
+
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Page>
