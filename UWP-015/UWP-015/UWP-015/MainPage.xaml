@@ -16,24 +16,25 @@
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
+            <RowDefinition Height="48"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="48"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="48"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <TextBlock Text="Title 1" FontSize="24" Grid.Row="0" VerticalAlignment="Bottom"></TextBlock>
-        <TextBlock Text="Title 2" FontSize="24" Grid.Row="2" VerticalAlignment="Bottom"></TextBlock>
-        <TextBlock Text="Title 3" FontSize="24" Grid.Row="4" VerticalAlignment="Bottom"></TextBlock>
+        <TextBlock Text="Title 1" FontSize="24" Grid.Row="0" VerticalAlignment="Bottom" Margin="0,20,0,0"></TextBlock>
+        <TextBlock Text="Title 2" FontSize="24" Grid.Row="2" VerticalAlignment="Bottom" Margin="0,20,0,0"></TextBlock>
+        <TextBlock Text="Title 3" FontSize="24" Grid.Row="4" VerticalAlignment="Bottom" Margin="0,20,0,0"></TextBlock>
 
         <!-- Outer (vertical) Stackpanel 1-->
         <StackPanel Grid.Column="1" Grid.Row="1">
 
             <TextBlock TextWrapping="Wrap" 
                        TextLineBounds="Full"
-                       Height="80"
+                       Height="Auto"
+                       MaxHeight="120"
                        Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut luctus, mi nec fermentum congue, turpis nibh porttitor ex, sed commodo neque eros non libero. Donec mauris felis, malesuada nec consectetur et, pharetra in ante. Praesent nec hendrerit purus. Ut vel nunc id nisl volutpat porta. Cras in convallis ipsum. Integer id sollicitudin ex. Ut sed iaculis nisl. 
 "/>
 
@@ -52,7 +53,8 @@
 
             <TextBlock TextWrapping="Wrap" 
                        TextLineBounds="Full"
-                       Height="80"
+                       Height="Auto"
+                       MaxHeight="120"
                        Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut luctus, mi nec fermentum congue, turpis nibh porttitor ex, sed commodo neque eros non libero. Donec mauris felis, malesuada nec consectetur et, pharetra in ante. Praesent nec hendrerit purus. Ut vel nunc id nisl volutpat porta. Cras in convallis ipsum. Integer id sollicitudin ex. Ut sed iaculis nisl. 
 "/>
             
@@ -69,7 +71,8 @@
 
             <TextBlock TextWrapping="Wrap" 
                        TextLineBounds="Full"
-                       Height="80"
+                       Height="Auto"
+                       MaxHeight="120"
                        Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut luctus, mi nec fermentum congue, turpis nibh porttitor ex, sed commodo neque eros non libero. Donec mauris felis, malesuada nec consectetur et, pharetra in ante. Praesent nec hendrerit purus. Ut vel nunc id nisl volutpat porta. Cras in convallis ipsum. Integer id sollicitudin ex. Ut sed iaculis nisl. 
 "/>
 
