@@ -32,7 +32,7 @@
         <StackPanel Grid.Column="1" Grid.Row="1">
 
             <TextBlock TextWrapping="Wrap" 
-                       TextLineBounds="TrimToBaseline"
+                       TextLineBounds="Full"
                        Height="80"
                        Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut luctus, mi nec fermentum congue, turpis nibh porttitor ex, sed commodo neque eros non libero. Donec mauris felis, malesuada nec consectetur et, pharetra in ante. Praesent nec hendrerit purus. Ut vel nunc id nisl volutpat porta. Cras in convallis ipsum. Integer id sollicitudin ex. Ut sed iaculis nisl. 
 "/>
@@ -51,7 +51,7 @@
         <StackPanel Grid.Column="1" Grid.Row="3">
 
             <TextBlock TextWrapping="Wrap" 
-                       TextLineBounds="TrimToBaseline"
+                       TextLineBounds="Full"
                        Height="80"
                        Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut luctus, mi nec fermentum congue, turpis nibh porttitor ex, sed commodo neque eros non libero. Donec mauris felis, malesuada nec consectetur et, pharetra in ante. Praesent nec hendrerit purus. Ut vel nunc id nisl volutpat porta. Cras in convallis ipsum. Integer id sollicitudin ex. Ut sed iaculis nisl. 
 "/>
@@ -68,7 +68,7 @@
         <StackPanel Grid.Column="1" Grid.Row="5">
 
             <TextBlock TextWrapping="Wrap" 
-                       TextLineBounds="TrimToBaseline"
+                       TextLineBounds="Full"
                        Height="80"
                        Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut luctus, mi nec fermentum congue, turpis nibh porttitor ex, sed commodo neque eros non libero. Donec mauris felis, malesuada nec consectetur et, pharetra in ante. Praesent nec hendrerit purus. Ut vel nunc id nisl volutpat porta. Cras in convallis ipsum. Integer id sollicitudin ex. Ut sed iaculis nisl. 
 "/>
