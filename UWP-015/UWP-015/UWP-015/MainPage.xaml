@@ -10,9 +10,9 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="500">
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
@@ -31,28 +31,53 @@
         <!-- Outer (vertical) Stackpanel 1-->
         <StackPanel Grid.Column="1" Grid.Row="1">
 
-            <!-- Inner (horizontal) Stackpanel 1-->
-            <StackPanel Orientation="Horizontal">
+            <TextBlock TextWrapping="Wrap" 
+                       TextLineBounds="TrimToBaseline"
+                       Height="80"
+                       Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut luctus, mi nec fermentum congue, turpis nibh porttitor ex, sed commodo neque eros non libero. Donec mauris felis, malesuada nec consectetur et, pharetra in ante. Praesent nec hendrerit purus. Ut vel nunc id nisl volutpat porta. Cras in convallis ipsum. Integer id sollicitudin ex. Ut sed iaculis nisl. 
+"/>
 
+            <!-- Inner (horizontal) Stackpanel 1-->
+            <StackPanel Orientation="Horizontal" Height="30">
+                <Rectangle Fill="Green" Width="100" />
+                <Rectangle Fill="Black" Width="100"/>
+                <Rectangle Fill="Red" Width="100"/>
             </StackPanel>
+            
 
         </StackPanel>
 
         <!-- Outer (vertical) Stackpanel 2-->
         <StackPanel Grid.Column="1" Grid.Row="3">
 
+            <TextBlock TextWrapping="Wrap" 
+                       TextLineBounds="TrimToBaseline"
+                       Height="80"
+                       Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut luctus, mi nec fermentum congue, turpis nibh porttitor ex, sed commodo neque eros non libero. Donec mauris felis, malesuada nec consectetur et, pharetra in ante. Praesent nec hendrerit purus. Ut vel nunc id nisl volutpat porta. Cras in convallis ipsum. Integer id sollicitudin ex. Ut sed iaculis nisl. 
+"/>
+            
             <!-- Inner (horizontal) Stackpanel 2-->
-            <StackPanel Orientation="Horizontal">
-
+            <StackPanel Orientation="Horizontal" Height="30">
+                <Rectangle Fill="Red" Width="100"/>
+                <Rectangle Fill="Black" Width="100"/>
+                <Rectangle Fill="Blue" Width="100"/>
             </StackPanel>
         </StackPanel>
 
         <!-- Outer (vertical) Stackpanel 3-->
         <StackPanel Grid.Column="1" Grid.Row="5">
 
-            <!-- Inner (horizontal) Stackpanel 3-->
-            <StackPanel Orientation="Horizontal">
+            <TextBlock TextWrapping="Wrap" 
+                       TextLineBounds="TrimToBaseline"
+                       Height="80"
+                       Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut luctus, mi nec fermentum congue, turpis nibh porttitor ex, sed commodo neque eros non libero. Donec mauris felis, malesuada nec consectetur et, pharetra in ante. Praesent nec hendrerit purus. Ut vel nunc id nisl volutpat porta. Cras in convallis ipsum. Integer id sollicitudin ex. Ut sed iaculis nisl. 
+"/>
 
+            <!-- Inner (horizontal) Stackpanel 3-->
+            <StackPanel Orientation="Horizontal" Height="30">
+                <Rectangle Fill="Blue" Width="100"/>
+                <Rectangle Fill="Black" Width="100"/>
+                <Rectangle Fill="Yellow" Width="100"/>
             </StackPanel>
         </StackPanel>
     </Grid>
