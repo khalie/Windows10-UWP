@@ -25,6 +25,15 @@ namespace UWP_023
         public MainPage()
         {
             this.InitializeComponent();
+            
+        }
+
+        private void HamburgerButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (HamburgerMenu.IsPaneOpen)
+                HamburgerMenu.IsPaneOpen = false;
+            else
+                HamburgerMenu.IsPaneOpen = true;
         }
     }
 }

@@ -22032,11 +22032,18 @@
     "dependencies": {
       "Microsoft.NETCore.UniversalWindowsPlatform": {
         "target": "Package",
-        "version": "[5.2.3, )"
+        "version": "5.2.3"
       }
     },
     "frameworks": {
-      "uap10.0.10586": {}
+      "uap10.0.10586": {
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": {
+            "target": "Package",
+            "version": "5.2.3"
+          }
+        }
+      }
     },
     "runtimes": {
       "win10-arm": {
