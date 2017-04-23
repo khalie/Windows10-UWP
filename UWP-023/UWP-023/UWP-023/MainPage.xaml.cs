@@ -30,10 +30,7 @@ namespace UWP_023
 
         private void HamburgerButton_Click(object sender, RoutedEventArgs e)
         {
-            if (HamburgerMenu.IsPaneOpen)
-                HamburgerMenu.IsPaneOpen = false;
-            else
-                HamburgerMenu.IsPaneOpen = true;
+            HamburgerMenu.IsPaneOpen = !HamburgerMenu.IsPaneOpen;
         }
 
         private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
