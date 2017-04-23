@@ -13,7 +13,7 @@
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
-        
+
         <RelativePanel>
             <Button Name="HamburgerButton" 
                     FontFamily="Segoe MDL2 Assets" 
@@ -27,14 +27,13 @@
                        FontSize="28"
                        FontWeight="Bold"
                        Margin="20,5,0,0"/>
-            <!-- ToDo: Find a way to get the Searchbar and Button in the right corner -->
 
             <Button Name="btnSearch" 
                     FontFamily="Segoe MDL2 Assets" 
                     FontSize="36" 
                     Content="&#xE1A3;"
                     RelativePanel.AlignRightWithPanel="True"/>
-            
+
             <TextBox Name="SearchBox" 
                      Height="48" 
                      Width="200"
@@ -43,56 +42,39 @@
                      RelativePanel.LeftOf="btnSearch"/>
 
 
-
-            <SplitView Name="HamburgerMenu"
-                       CompactPaneLength="48"
-                       OpenPaneLength="200"
-                       Height="Auto"
-                       DisplayMode="CompactOverlay"
-                       RelativePanel.Below="HamburgerButton"
-                       IsPaneOpen="true">
+            <SplitView
+                Grid.Row="1"
+                Name="HamburgerMenu"
+                CompactPaneLength="56"
+                OpenPaneLength="200"
+                Height="Auto"
+                DisplayMode="CompactOverlay"
+                RelativePanel.Below="HamburgerButton">
 
                 <SplitView.Content>
-
-                    <Frame Name="ContentFrame" Height="Auto" Width="Auto" RelativePanel.Below="txtHeader" RelativePanel.AlignLeftWith="txtHeader"/>
-
+                    <Frame Name="ContentFrame"></Frame>
                 </SplitView.Content>
 
                 <SplitView.Pane>
-                  
-                        
-                        <RelativePanel>
-                        <ListBox>
-                            <Button Name="HomeButton" FontFamily="Segoe MDL2 Assets" Content="&#xE10F;" FontSize="36"
-                                        Background="LightGray"/>
-
-                            <ListBoxItem Background="LightGray"
-                                     FontSize="26"
-                                     Content="Home">
-                                
-                                
-                            </ListBoxItem>
-
-                            <Button Name="FavouritesButton" FontFamily="Segoe MDL2 Assets" Content="&#xE006;" FontSize="36"
-                                        Background="LightGray" RelativePanel.Below="HomeButton"/>
-
-                            <ListBoxItem>
+                    <RelativePanel>
+                        <ListBox SelectionMode="Single" 
+                                 SelectionChanged="ListBox_SelectionChanged">
+                            <ListBoxItem Name="lbFinancial">
                                 <StackPanel Orientation="Horizontal">
-                                    <Button>Hallo</Button>
-                                    <TextBox Text="I Bims die Text"></TextBox>
+                                    <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE80F;" />
+                                    <TextBlock FontSize="24" Margin="20,0,0,0">Financial</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
-
+                            <ListBoxItem Name="lbFood">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE1CE;"/>
+                                    <TextBlock FontSize="24" Margin="20,0,0,0">Food</TextBlock>
+                                </StackPanel>
+                            </ListBoxItem>
                         </ListBox>
                     </RelativePanel>
-                   
-                        
-                        
-                   
-
                 </SplitView.Pane>
             </SplitView>
-
         </RelativePanel>
     </Grid>
 </Page>

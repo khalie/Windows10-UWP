@@ -35,5 +35,10 @@ namespace UWP_023
             else
                 HamburgerMenu.IsPaneOpen = true;
         }
+
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            
+        }
     }
 }

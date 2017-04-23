@@ -9,82 +9,72 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
         <RelativePanel>
-            <Button x:ConnectionId='1' Name="HamburgerButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" FontSize="36"                               HorizontalAlignment="Stretch" />
+            <Button x:ConnectionId='1' Name="HamburgerButton" 
+                    FontFamily="Segoe MDL2 Assets" 
+                    Content="&#xE700;" 
+                    FontSize="36" 
+                                                 />
 
             <TextBlock x:ConnectionId='2' Name="txtHeader" 
                        Text="Header" 
                        RelativePanel.RightOf="HamburgerButton"
-                       RelativePanel.AlignBottomWith="HamburgerButton"
-                       FontSize="36"
+                       FontSize="28"
                        FontWeight="Bold"
-                       Width="890"
-                       Margin="20,0,0,0"/>
-            <!-- ToDo: Find a way to get the Searchbar and Button in the right corner -->
+                       Margin="20,5,0,0"/>
 
-            <TextBox x:ConnectionId='3' Name="SearchBox" 
-                     Width="250" 
-                     FontSize="26"
-                     Text="Search"
-                     RelativePanel.RightOf="txtHeader"
-                     RelativePanel.AlignBottomWith="HamburgerButton"/>
-
-            <Button FontFamily="Segoe MDL2 Assets" 
-                    Content="&#xE11A;" 
+            <Button x:ConnectionId='3' Name="btnSearch" 
+                    FontFamily="Segoe MDL2 Assets" 
                     FontSize="36" 
-                    RelativePanel.RightOf="SearchBox"
-                    RelativePanel.AlignBottomWith="HamburgerButton"/>
+                    Content="&#xE1A3;"
+                    RelativePanel.AlignRightWithPanel="True"/>
+
+            <TextBox x:ConnectionId='4' Name="SearchBox" 
+                     Height="48" 
+                     Width="200"
+                     FontSize="24"
+                     PlaceholderText="Search"
+                     RelativePanel.LeftOf="btnSearch"/>
 
 
-            <SplitView x:ConnectionId='4' Name="HamburgerMenu"
-                       CompactPaneLength="48"
-                       OpenPaneLength="200"
-                       Height="Auto"
-                       DisplayMode="CompactOverlay"
-                       RelativePanel.Below="HamburgerButton"
-                       IsPaneOpen="true">
+            <SplitView x:ConnectionId='5'
+                Grid.Row="1"
+                Name="HamburgerMenu"
+                CompactPaneLength="56"
+                OpenPaneLength="200"
+                Height="Auto"
+                DisplayMode="CompactOverlay"
+                RelativePanel.Below="HamburgerButton">
 
                 <SplitView.Content>
-                    <Frame></Frame>
+                    <Frame x:ConnectionId='6' Name="ContentFrame"></Frame>
                 </SplitView.Content>
 
                 <SplitView.Pane>
-                  
-                        
-                        <RelativePanel>
-                        <ListBox>
-                            <Button x:ConnectionId='6' Name="HomeButton" FontFamily="Segoe MDL2 Assets" Content="&#xE10F;" FontSize="36"
-                                        Background="LightGray"/>
-
-                            <ListBoxItem Background="LightGray"
-                                     FontSize="26"
-                                     Content="Home">
-                                
-                                
-                            </ListBoxItem>
-
-                            <Button x:ConnectionId='7' Name="FavouritesButton" FontFamily="Segoe MDL2 Assets" Content="&#xE006;" FontSize="36"
-                                        Background="LightGray" RelativePanel.Below="HomeButton"/>
-
-                            <ListBoxItem>
+                    <RelativePanel>
+                        <ListBox x:ConnectionId='7' SelectionMode="Single" 
+                                                                            >
+                            <ListBoxItem x:ConnectionId='8' Name="lbFinancial">
                                 <StackPanel Orientation="Horizontal">
-                                    <Button>Hallo</Button>
-                                    <TextBox Text="I Bims die Text"></TextBox>
+                                    <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE80F;" />
+                                    <TextBlock FontSize="24" Margin="20,0,0,0">Financial</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
-
+                            <ListBoxItem x:ConnectionId='9' Name="lbFood">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE1CE;"/>
+                                    <TextBlock FontSize="24" Margin="20,0,0,0">Food</TextBlock>
+                                </StackPanel>
+                            </ListBoxItem>
                         </ListBox>
                     </RelativePanel>
-                   
-                        
-                        
-                   
-
                 </SplitView.Pane>
             </SplitView>
-
-            <Frame x:ConnectionId='5' Name="ContentFrame" Height="Auto" Width="Auto" RelativePanel.Below="txtHeader" RelativePanel.AlignLeftWith="txtHeader"/>
-
         </RelativePanel>
     </Grid>
 </Page>
