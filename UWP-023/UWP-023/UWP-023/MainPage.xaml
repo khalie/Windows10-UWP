@@ -9,31 +9,39 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        
         <RelativePanel>
-            <Button Name="HamburgerButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" FontSize="36" Click="HamburgerButton_Click" HorizontalAlignment="Stretch" />
+            <Button Name="HamburgerButton" 
+                    FontFamily="Segoe MDL2 Assets" 
+                    Content="&#xE700;" 
+                    FontSize="36" 
+                    Click="HamburgerButton_Click"/>
 
             <TextBlock Name="txtHeader" 
                        Text="Header" 
                        RelativePanel.RightOf="HamburgerButton"
-                       RelativePanel.AlignBottomWith="HamburgerButton"
-                       FontSize="36"
+                       FontSize="28"
                        FontWeight="Bold"
-                       Width="890"
-                       Margin="20,0,0,0"/>
+                       Margin="20,5,0,0"/>
             <!-- ToDo: Find a way to get the Searchbar and Button in the right corner -->
 
-            <TextBox Name="SearchBox" 
-                     Width="250" 
-                     FontSize="26"
-                     Text="Search"
-                     RelativePanel.RightOf="txtHeader"
-                     RelativePanel.AlignBottomWith="HamburgerButton"/>
-
-            <Button FontFamily="Segoe MDL2 Assets" 
-                    Content="&#xE11A;" 
+            <Button Name="btnSearch" 
+                    FontFamily="Segoe MDL2 Assets" 
                     FontSize="36" 
-                    RelativePanel.RightOf="SearchBox"
-                    RelativePanel.AlignBottomWith="HamburgerButton"/>
+                    Content="&#xE1A3;"
+                    RelativePanel.AlignRightWithPanel="True"/>
+            
+            <TextBox Name="SearchBox" 
+                     Height="48" 
+                     Width="200"
+                     FontSize="24"
+                     PlaceholderText="Search"
+                     RelativePanel.LeftOf="btnSearch"/>
+
 
 
             <SplitView Name="HamburgerMenu"
