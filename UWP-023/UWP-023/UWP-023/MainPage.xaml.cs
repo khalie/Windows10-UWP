@@ -27,8 +27,7 @@ namespace UWP_023
             this.InitializeComponent();
 
             // Initially navigate to the Financial Page
-            ContentFrame.Navigate(typeof(Financial));
-            txtHeader.Text = "Financial";
+            MyListBox.SelectedItem = lbFinancial;
         }
 
         private void HamburgerButton_Click(object sender, RoutedEventArgs e)
@@ -38,7 +37,17 @@ namespace UWP_023
 
         private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            
+            // Initially load the Financial Frame (txtHeader == Header)
+            if(txtHeader.Text == "Header" || txtHeader.Text == "Food")
+            {
+                ContentFrame.Navigate(typeof(Financial));
+                txtHeader.Text = "Financial";
+            }
+            else
+            {
+                ContentFrame.Navigate(typeof(Food));
+                txtHeader.Text = "Food";
+            }
         }
     }
 }

@@ -70,6 +70,7 @@
       <RootProperty Name="Name" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListBox">
+      <RootProperty Name="Name" />
       <RootProperty Name="SelectionMode" />
       <RootProperty Name="Items" />
       <RootEvent Name="SelectionChanged" />

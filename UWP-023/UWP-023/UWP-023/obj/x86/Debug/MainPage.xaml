@@ -58,7 +58,8 @@
                 <SplitView.Pane>
                     <RelativePanel>
                         <ListBox x:ConnectionId='7' SelectionMode="Single" 
-                                                                            >
+                                                                            
+                                 Name="MyListBox">
                             <ListBoxItem x:ConnectionId='8' Name="lbFinancial">
                                 <StackPanel Orientation="Horizontal">
                                     <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE80F;" />
