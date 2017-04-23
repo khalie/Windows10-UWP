@@ -25,7 +25,10 @@ namespace UWP_023
         public MainPage()
         {
             this.InitializeComponent();
-            
+
+            // Initially navigate to the Financial Page
+            ContentFrame.Navigate(typeof(Financial));
+            txtHeader.Text = "Financial";
         }
 
         private void HamburgerButton_Click(object sender, RoutedEventArgs e)

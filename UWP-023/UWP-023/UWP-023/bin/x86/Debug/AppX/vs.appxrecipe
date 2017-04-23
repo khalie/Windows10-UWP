@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Repos\Windows10-UWP\UWP-023\UWP-023\UWP-023\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-23T08:23:49.881</Modified>
+      <Modified>2017-04-23T08:33:29.550</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Repos\Windows10-UWP\UWP-023\UWP-023\UWP-023\bin\x86\Debug\UWP-023.exe">
       <PackagePath>entrypoint\UWP-023.exe</PackagePath>
-      <Modified>2017-04-23T08:23:49.534</Modified>
+      <Modified>2017-04-23T08:33:29.199</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Peter\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -572,7 +572,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Repos\Windows10-UWP\UWP-023\UWP-023\UWP-023\bin\x86\Debug\Core\UWP-023.exe">
       <PackagePath>UWP-023.exe</PackagePath>
-      <Modified>2017-04-23T08:23:49.879</Modified>
+      <Modified>2017-04-23T08:33:29.545</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
