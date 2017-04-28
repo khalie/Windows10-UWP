@@ -25,6 +25,27 @@ namespace UWP_031
         public MainPage()
         {
             this.InitializeComponent();
+            ContentFrame.Navigate(typeof(CoffeePage));
+        }
+
+        private void btnDonuts_Click(object sender, RoutedEventArgs e)
+        {
+            ContentFrame.Navigate(typeof(DonutPage));
+        }
+
+        private void btnCoffee_Click(object sender, RoutedEventArgs e)
+        {
+            ContentFrame.Navigate(typeof(CoffeePage));
+        }
+
+        private void btnSchedule_Click(object sender, RoutedEventArgs e)
+        {
+            ContentFrame.Navigate(typeof(SchedulePage));
+        }
+
+        private void btnComplete_Click(object sender, RoutedEventArgs e)
+        {
+            ContentFrame.Navigate(typeof(CompletePage));
         }
     }
 }
