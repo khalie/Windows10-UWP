@@ -18,6 +18,13 @@
         <Style TargetType="Image" x:Key="NavigationButtonImage">
             <Setter Property="Stretch" Value="None"/>
         </Style>
+
+        <Style TargetType="TextBlock" x:Key="NavigationButtonTextBlock">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="26"/>
+            <Setter Property="Margin" Value="10,0,0,0"/>
+            <Setter Property="VerticalAlignment" Value="Center"/> 
+        </Style>
     </Page.Resources>
     
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
@@ -37,25 +44,25 @@
             <Button Grid.Column="0" Style="{StaticResource NavigationButton}">
                 <StackPanel Orientation="Horizontal" Background="Black">
                     <Image Source="Assets\donut-icon.png" Style="{StaticResource NavigationButtonImage}"/>
-                    <TextBlock Text="Donuts" FontSize="26"/>
+                    <TextBlock Text="Donuts" Style="{StaticResource NavigationButtonTextBlock}"/>
                 </StackPanel>
             </Button>
             <Button Grid.Column="1" Style="{StaticResource NavigationButton}">
                 <StackPanel Orientation="Horizontal" Background="Black">
                     <Image Source="Assets\coffee-icon.png" Style="{StaticResource NavigationButtonImage}"/>
-                    <TextBlock Text="Coffee" FontSize="26"/>
+                    <TextBlock Text="Coffee" Style="{StaticResource NavigationButtonTextBlock}"/>
                 </StackPanel>
             </Button>
             <Button Grid.Column="2" Style="{StaticResource NavigationButton}">
                 <StackPanel Orientation="Horizontal" Background="Black">
                     <Image Source="Assets\schedule-icon.png" Style="{StaticResource NavigationButtonImage}"/>
-                    <TextBlock Text="Schedule" FontSize="26"/>
+                    <TextBlock Text="Schedule" Style="{StaticResource NavigationButtonTextBlock}"/>
                 </StackPanel>
             </Button>
             <Button Grid.Column="3" Style="{StaticResource NavigationButton}">
                 <StackPanel Orientation="Horizontal" Background="Black">
                     <Image Source="Assets\complete-icon.png" Style="{StaticResource NavigationButtonImage}"/>
-                    <TextBlock Text="Complete" FontSize="26"/>
+                    <TextBlock Text="Complete" Style="{StaticResource NavigationButtonTextBlock}"/>
                 </StackPanel>
             </Button>
         </Grid>
