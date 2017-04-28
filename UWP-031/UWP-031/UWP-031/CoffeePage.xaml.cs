@@ -22,9 +22,40 @@ namespace UWP_031
     /// </summary>
     public sealed partial class CoffeePage : Page
     {
+        String order = "None";
+        String roast = "";
+        String sweetener = "";
+        String cream = "";
+
         public CoffeePage()
         {
             this.InitializeComponent();
+        }
+
+        private void btnNone_Click(object sender, RoutedEventArgs e)
+        {
+            order = "None";
+            updateOrder();
+        }
+
+        private void btnDark_Click(object sender, RoutedEventArgs e)
+        {
+            roast = "Dark";
+            updateOrder();
+        }
+
+        private void btnMedium_Click(object sender, RoutedEventArgs e)
+        {
+            roast = "Medium";
+            updateOrder();
+        }
+
+        private void updateOrder()
+        {
+            if (roast != "None")
+                order = roast + " " + sweetener + " " + cream;
+            else
+                order = "None";
         }
     }
 }

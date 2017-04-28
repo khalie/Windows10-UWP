@@ -7,7 +7,20 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="Green">
 
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Image Source="Assets\white-logo.png" HorizontalAlignment="Left"/>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <TextBlock Text="Pickup:" FontSize="26" Foreground="White" Margin="20"/>
+            <DatePicker Name="dPicker"></DatePicker>
+        </StackPanel>
+
+        <TimePicker Grid.Row="2" RelativePanel.AlignLeftWith="dPicker"></TimePicker>
     </Grid>
 </Page>

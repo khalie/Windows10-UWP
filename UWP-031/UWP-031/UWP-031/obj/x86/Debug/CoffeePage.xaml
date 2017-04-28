@@ -7,8 +7,61 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Resources>
+        <Style TargetType="Button" x:Key="btnStyle">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="18"/>
+        </Style>
+        
+    </Page.Resources>
+    
+    <Grid Background="#3C1F19">
 
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        <Image Source="Assets\white-logo.png" HorizontalAlignment="Left" Grid.ColumnSpan="2"/>
+
+        <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal">
+            <Button x:ConnectionId='1' Name="btnRoast" Style="{StaticResource btnStyle}">
+                <Flyout></Flyout>
+            </Button>
+            <Button x:ConnectionId='2' Content="Sweetener" Name="btnSweetener" Style="{StaticResource btnStyle}"></Button>
+            <Button x:ConnectionId='3' Content="Cream" Name="btnCream" Style="{StaticResource btnStyle}"></Button>
+
+            <Button VerticalAlignment="Center" HorizontalAlignment="Center"
+            Content="Roast">
+                <Button.Flyout>
+                    <Flyout>
+                        <Flyout.FlyoutPresenterStyle>
+                            <Style TargetType="FlyoutPresenter">
+                                <Setter Property="ScrollViewer.HorizontalScrollMode" Value="Disabled"/>
+                                <Setter Property="IsTabStop" Value="True"/>
+                                <Setter Property="TabNavigation" Value="Cycle"/>
+                            </Style>
+                        </Flyout.FlyoutPresenterStyle>
+                        <StackPanel Width="Auto">
+                            <Button x:ConnectionId='4' Width="100" Content="None"                      ></Button>
+                            <Button x:ConnectionId='5' Width="100" Content="Dark"                      ></Button>
+                            <Button x:ConnectionId='6' Width="100" Content="Medium"                        ></Button>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+            </Button>
+            
+            
+        </StackPanel>
+        
+        <TextBlock Grid.Row="2" Text="Coffee:" Foreground="White" FontSize="26" Margin="20"></TextBlock>
+        <TextBlock Grid.Row="2" Grid.Column="1" Foreground="White" Margin="20"  Text="{Binding order, Mode=TwoWay}" FontSize="26"/>
     </Grid>
 </Page>
 
